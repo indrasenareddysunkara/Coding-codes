@@ -1,0 +1,16 @@
+#4 Arithmeitic Operations
+
+var1 = 9   #Variable1
+var2 = 3   #Variable2
+
+#Adding
+print (var1, '+', var2, '=',  var1 + var2)
+
+#Subtracting
+print (var1, '-', var2, '=',  var1 - var2)
+
+#Multiplying
+print (var1, '×', var2, '=',  var1 * var2)
+
+#Dividing
+print (var1, '÷', var2, '=',  var1 / var2)
