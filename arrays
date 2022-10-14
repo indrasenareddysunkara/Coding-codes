@@ -1,0 +1,6 @@
+#5 Arrays[Basically List] in Python
+
+arr = [2, 3, 5]   # initialized Array
+
+print(arr[0] )  # printing 1st element
+print(arr[1] )  # printing 2nd element
