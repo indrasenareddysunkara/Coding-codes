@@ -1,0 +1,162 @@
+/* WRAPPER: full-screen gradient background */
+.login-wrapper {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+
+  /* Fitness-style gradient with teal base */
+  background: linear-gradient(
+    135deg,
+    #0D8A9A 0%,
+    #34c3ba 30%,
+    #ffb3c6 65%,
+    #b086ff 100%
+  );
+}
+
+/* CARD */
+/* CARD with theme gradient */
+.login-card {
+  width: 400px;
+  max-width: 95vw;
+  border-radius: 32px;
+  padding: 36px 34px 30px;
+
+  /* Themed gradient background */
+  background: linear-gradient(
+    135deg,
+    rgba(13, 138, 154, 0.92) 0%,
+    rgba(52, 195, 186, 0.92) 30%,
+    rgba(255, 179, 198, 0.92) 70%,
+    rgba(176, 134, 255, 0.92) 100%
+  );
+
+  /* Soft blur + elevation */
+  backdrop-filter: blur(6px);
+
+  /* Smooth shadow */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.22);
+
+  text-align: center;
+  color: white; /* All text switches to white */
+}
+
+/* TITLE + SUBTITLE */
+.login-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 4px;
+  letter-spacing: 0.06em;
+}
+
+.login-subtitle {
+  font-size: 17px;
+  color: #f2f2f2;
+  margin-bottom: 24px;
+}
+
+
+/* FORM SPACING */
+.login-form .ant-form-item {
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+/* INPUTS */
+.login-form .ant-input,
+.login-form .ant-input-affix-wrapper {
+  border-radius: 12px !important;
+  height: 44px;
+  padding: 0 12px;
+  background: #f7fbfc;
+  border: 1px solid #d5e7ea;
+}
+
+.login-form .ant-input-affix-wrapper-focused,
+.login-form .ant-input-affix-wrapper:focus,
+.login-form .ant-input:focus {
+  border-color: #0D8A9A !important;
+  box-shadow: 0 0 0 2px rgba(13, 138, 154, 0.18) !important;
+}
+
+/* MAIN LOGIN BUTTON */
+.login-main-btn {
+  background: linear-gradient(135deg, #0D8A9A, #34c3ba);
+  border: none;
+  border-radius: 14px;
+  height: 46px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff !important;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.login-main-btn:hover,
+.login-main-btn:focus {
+  background: linear-gradient(135deg, #0b7785, #29a9a9) !important;
+  color: #ffffff !important;
+}
+
+/* FORGOT PASSWORD ROW */
+.login-forgot-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;    /* increased */
+  margin-bottom: 12px;
+}
+
+/* LINK STYLES */
+.link-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 15px;
+  color: #0D8A9A;
+  cursor: pointer;
+}
+
+.link-btn:hover {
+  text-decoration: underline;
+}
+
+/* CENTERED REGISTER TEXT */
+.login-register-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+  margin-bottom: 4px;
+}
+
+.login-register-text {
+  font-size: 15px;
+  color: #555;
+}
+
+.signup-btn {
+  font-size: 15px;
+  font-weight: 600;
+  color: #0D8A9A;
+}
+
+.signup-btn:hover {
+  text-decoration: underline;
+}
+
+/* SMALL SCREEN TWEAKS */
+@media (max-width: 480px) {
+  .login-card {
+    padding: 28px 22px 24px;
+    border-radius: 24px;
+  }
+
+  .login-title {
+    font-size: 24px;
+  }
+}
